@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="usedImages/favicon-32x32.png"
+    />
+    <title>SafeString: Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="usedImages/digital-key.png" />
+      <h1>SafeString: Password Generator</h1>
+    </header>
+    <main>
+      <h2>Generate your strongest password, NOW!</h2>
+      <div id="passwordBox">
+        <input type="text" id="password" readonly />
+        <button type="button" id="generateButton">Generate Password</button>
+        <button
+          type="button"
+          id="copyButton"
+          aria-label="Copy password to clipboard"
+          onclick="copyToClipboard()"
+        >
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div id="customizationOptions">
+        <label for="passwordLength">Password length:</label>
+        <input
+          type="range"
+          id="passwordLength"
+          name="passwordLength"
+          min="10"
+          max="50"
+          value="12"
+          aria-label="Password Length"
+        />
+        <span id="lengthValue">12</span>
+        <script>
+          const slider = document.getElementById("passwordLength");
+          const lengthValue = document.getElementById("lengthValue");
+          slider.addEventListener("input", function () {
+            lengthValue.textContent = slider.value;
+          });
+        </script>
+        <br />
+        <br />
+        <div>
+          <input
+            type="checkbox"
+            id="includeAlphabets"
+            name="includeAlphabets"
+            checked
+          />
+          <label for="includeAlphabets">Include Alphabets</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="includeSpecialChars"
+            name="includeSpecialChars"
+            checked
+          />
+          <label for="includeSpecialChars">Include Special Characters</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="includeNumbers"
+            name="includeNumbers"
+            checked
+          />
+          <label for="includeNumbers">Include Numbers</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="includeUppercase"
+            name="includeUppercase"
+            checked
+          />
+          <label for="includeUppercase">Include Uppercase Letters</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="includeLowercase"
+            name="includeLowercase"
+            checked
+          />
+          <label for="includeLowercase">Include Lowercase Letters</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="excludeDuplicates"
+            name="excludeDuplicates"
+            checked
+          />
+          <label for="excludeDuplicates">Exclude Duplicate Letters</label>
+        </div>
+      </div>
+      <div id="passwordEntropy">
+        <label for="entropyValue">Password Entropy:</label>
+        <span id="strengthLabel"></span>
+        <input type="text" id="entropyValue" readonly />
+      </div>
+    </main>
+    <p style="text-align: center; margin-top: 20px">
+      &copy; 2025 SafeString. Made with ❤️ by Gauraang Rajvanshi
+    </p>
+  </body>
+</html>

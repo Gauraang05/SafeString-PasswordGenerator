@@ -1,0 +1,39 @@
+Password Generator
+
+1. Variable Lengths (also specific no of letter, numbers,special char)
+2. Options for numbers, uppercase, lowercas, special char
+3. strength recommendation: Easy, med, hard
+4. any key words by user
+5. copy button
+6. regenerate option
+7. duplicacy of letters: on/off
+8. user feedback/ comments option
+9. password entropy info
+
+# can make it as an extension to be used in chrome where we can generate and save the pass at same time (Password Manager)
+
+# tips for strong pass can be added (avoid blacklist words, use of caps I and small l and 1 (mix response), recommended no letters, numbers, etc., leaked passwords, high pass entropy, do not inc personal info)
+
+# password entropy can be added (how difficult/easy is it to crack the pass, measured as the number of bits that could represent all of the possibilities,E = log2(RL)
+E stands for password entropy
+R stands for pool size
+L stands for the number of characters in your password)
+
+# pass phrase can also be used
+# offline available
+# Cross-Platform Compatibility
+# strong encryption
+# reduce third party breaches
+# compiled with data protection and security guidelines
+
+1. Length of password (slider) - highest
+2. Include alphabets - yes
+3. Include special characters - yes
+4. Include numbers - yes
+5. Uppercase - yes
+6. Lowercase - yes
+7. Duplicasy of characters - no
+8. Password entropy
+ 
+
+
