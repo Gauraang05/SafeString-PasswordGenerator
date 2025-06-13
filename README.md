@@ -2,7 +2,7 @@
 A simple and customizable password generator website that helps you create strong and secure passwords instantly.
 
 🌐 Live Demo
-Check it out here:- 
+Check it out here:- https://gauraang05.github.io/SafeString-PasswordGenerator/
 
 🚀 Features
 Generate strong, random passwords instantly
