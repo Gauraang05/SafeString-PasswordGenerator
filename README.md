@@ -1,4 +1,4 @@
-🔐 SecureString: Password Generator
+<h1>🔐 SecureString: Password Generator</h1>
 A simple and customizable password generator website that helps you create strong and secure passwords instantly.
 
 🌐 Live Demo
